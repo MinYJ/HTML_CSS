@@ -1,0 +1,25 @@
+1. 글로벌속성
+- draggable
+- lang
+- hidden
+
+- id와input-label
+-> 스크린 리더기가 label_for와 input_id가 연결되어있으면 읽어준다
+
+- spellcheck
+- contenteditable
+- style
+
+- button
+-> title속성: 사용자가 어떤 버튼인지 알려주기해서 사용
+
+2. 로컬 속성
+(2.1)label
+- for
+
+(2.2) a태그
+- href
+- blank
+
+(2.3) img
+- style없이 width와 height 이용가능

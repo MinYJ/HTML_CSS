@@ -1,0 +1,36 @@
+태그를 통해서만 검색엔진과 시각장애인을 위한 강조를 표현할 수 있다
+
+1. 
+왜 볼드체를 2개 만들 수 있었을까?
+-> 사람눈에는 모두 똑같이 보이지만 웹 엔진이 볼때는 다르게 보인다.
+-> 즉, font를 준것은 검색엔진은 읽지 못한다
+-> p태그는 검색엔진이 강조한다는 의미를 모르는 대신에 strong태그는 검색엔진이 중요하다는것을 안다
+-> 또한 스크린 리더기는 strong태그를 강하게 읽어준다
+
+2. 
+태그는 의미를 가지고 있으며 다른말로 시멘틱요소라고 부른다
+-> strong, p 그 자체가 의미를 가지고 있다
+-> style은 시멘틱요소가 아니다
+
+3. 
+<em>: 이탤릭체 + 강조O
+<i>: 이텔릭체 + 강조X
+
+4.
+<mark> <-> style=background-yellow
+<del> <-> style="text-decoration: line-through"
+<ins> <-> style="text-decoration: underline"
+<sub>
+<sup>
+
+5.
+<blockquote cite=""></blockquote>: 긴 문장인용
+<q></q>: 짧은 문장인용
+
+6.
+약자용어설명
+<abbr title="World Health Organization">WHO</abbr>
+
+7. 
+<address>
+<cite></cite>: 브랜드명/작품명/이름명

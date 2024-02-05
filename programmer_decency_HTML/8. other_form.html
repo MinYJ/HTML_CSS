@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">살고 있는 지역은?</label>
+    <!-- 1. select: 여러개 선택 혹은 하나만 선택가능-->
+    <!-- input_radio: 여러옵션중하나-->
+    <!-- input_checkbox: 여러옵션중여러개-->
+    <!-- 보이는 text는 고유값이 아니다 (Seoul, 서울) 이렇게 다르게 표기될 수 있기 때문에 기준이 명확하지 않다-->
+    <!-- 여러명의 민수가 있지만 각 민수의 고유값은 이름이 아닌 주민번호로 판별한다-->
+    <!-- 옵션이 많을 때 사용할 수 있다-->
+    <select name="" id="">
+        <option value="02">서울</option>
+        <option value="051">부산</option>
+        <option value="064">제주</option>
+    </select>
+    <br />
+    <select name="" id="">
+        <option value="male">남자</option>
+        <option value="female">여자</option>
+    </select>
+    <!-- 옵션이 적을때 select을 사용하면 사용자가 2번의 액션을 해야하지만 -->
+    <!-- input을 하게될 경우 액션을 1번만 취하게 되므로 사용자편의적이다-->
+    <div>
+        <input type="radio" name="rdo_gender" id="male" />
+        <label for="male">남자</label>
+        <input type="radio" name="rdo_gender" id="female" />
+        <label for="female">여자</label>
+    </div>
+    <!-- 2. multiple: control키를 통해 사용자가 여러개 선택가능 -->
+    <select name="" id="" multiple>
+        <option value="02">서울</option>
+        <option value="051">부산</option>
+        <option value="064">제주</option>
+    </select>
+    <!-- 3. textarea: 여러줄을 입력받기위해 사용한다 -->
+    <div>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+    </div>
+    <!-- 4. fieldset: 개발자가 그룹화 시킬수 있다-->
+    <!-- legend: 그룹화 시킬 수 있다-->
+    <div>
+        <fieldset>
+            <legend>개인정보</legend>
+            <div>
+                <label for="">이름</label>
+                <input type="text" name="" id="name" />
+            </div>
+            <div>
+                <label for="">연락처</label>
+                <input type="text" name="" id="tel" />
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>학력정보</legend>
+            <div>
+                <label for="">대학교</label>
+                <input type="text" name="" id="name" />
+            </div>
+            <div>
+                <label for="">졸업년도</label>
+                <input type="text" name="" id="tel" />
+            </div>
+        </fieldset>
+    </div>
+    <!-- 5. datalist: 검색기능과 select기능이 합쳐졌다-->
+    <!-- 여러input에서도 사용가능-->
+    <!-- selectbox의 경우 계속해서 만들어야함-->
+    <div>
+        <input list="browsers">
+        <datalist id="browsers">
+            <option value="Internet Explorer">Internet Explorer</option>
+            <option value="Firefox">Firefox</option>
+            <option value="Chrome">Chrome</option>
+            <option value="Opera">Opera</option>
+            <option value="Safari">Safari</option>
+        </datalist>
+    </div>
+    <div>
+        <input list="browsers" id="browsers2">
+    </div>
+</body>
+</html>
